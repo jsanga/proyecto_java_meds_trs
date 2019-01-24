@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto_java;
+package proyecto_java.transportes;
+
+import proyecto_java.MedioDeTransporte;
 
 /**
  *
@@ -17,21 +19,19 @@ public class Terrestre extends MedioDeTransporte {
     private int kilometraje;
     private boolean electrico;
     private boolean hibrido;
-    private int cantidadPasajeros;
+    private String conductor;
     
     public Terrestre(){
     
     }
     
     public Terrestre(String traccion, String transmision, String combustible, int kilometraje,
-            boolean electrico, boolean hibrido, int cantidadPasajeros){
+            boolean electrico, boolean hibrido){
         this.traccion = traccion;
         this.transmision = transmision;
         this.combustible = combustible;
         this.kilometraje = kilometraje;
         this.electrico = electrico;
-        this.hibrido = hibrido;
-        this.cantidadPasajeros = cantidadPasajeros;
     }
 
     public String getTraccion() {
@@ -82,12 +82,12 @@ public class Terrestre extends MedioDeTransporte {
         this.hibrido = hibrido;
     }
 
-    public int getCantidadPasajeros() {
-        return cantidadPasajeros;
+    public String getConductor() {
+        return conductor;
     }
 
-    public void setCantidadPasajeros(int cantidadPasajeros) {
-        this.cantidadPasajeros = cantidadPasajeros;
+    public void setConductor(String conductor) {
+        this.conductor = conductor;
     }
     
 }

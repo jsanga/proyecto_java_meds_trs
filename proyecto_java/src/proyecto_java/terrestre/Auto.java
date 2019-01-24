@@ -5,10 +5,12 @@
  */
 package proyecto_java.terrestre;
 
+import proyecto_java.transportes.Terrestre;
+
 /**
  *
  * @author Dev 01
  */
-public class Auto {
+public class Auto extends Terrestre{
     
 }

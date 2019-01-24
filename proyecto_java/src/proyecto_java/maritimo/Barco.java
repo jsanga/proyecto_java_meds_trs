@@ -5,10 +5,12 @@
  */
 package proyecto_java.maritimo;
 
+import proyecto_java.transportes.Maritimo;
+
 /**
  *
  * @author Dev 01
  */
-public class Barco {
+public class Barco extends Maritimo{
     
 }

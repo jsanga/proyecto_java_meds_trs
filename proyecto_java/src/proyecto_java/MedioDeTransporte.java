@@ -21,13 +21,16 @@ public class MedioDeTransporte {
     private boolean deCarga;
     private boolean urbano;
     private boolean publico;
+    private int cantidadPasajeros;
+    private float cargaKg;
+    private String estructura;
 
     public MedioDeTransporte(){
     
     }
     
     public MedioDeTransporte(int tipo, String marca, String modelo, int anioFabricacion, float potencia, float torque,
-            boolean dePasajeros, boolean deCarga, boolean urbano, boolean publico){
+            boolean dePasajeros, boolean deCarga, boolean urbano, boolean publico, int cantidadPasajeros, float cargaKg, String estructura){
         this.tipo = tipo;
         this.marca = marca;
         this.modelo = modelo;
@@ -36,6 +39,9 @@ public class MedioDeTransporte {
         this.torque = torque;
         this.dePasajeros = dePasajeros;
         this.deCarga = deCarga;
+        this.cantidadPasajeros = cantidadPasajeros;
+        this.cargaKg = cargaKg;
+        this.estructura = estructura;
     }
     
     public int getTipo() {
@@ -116,6 +122,22 @@ public class MedioDeTransporte {
 
     public void setTorque(float torque) {
         this.torque = torque;
+    }
+
+    public int getCantidadPasajeros() {
+        return cantidadPasajeros;
+    }
+
+    public void setCantidadPasajeros(int cantidadPasajeros) {
+        this.cantidadPasajeros = cantidadPasajeros;
+    }
+
+    public float getCargaKg() {
+        return cargaKg;
+    }
+
+    public void setCargaKg(float cargaKg) {
+        this.cargaKg = cargaKg;
     }
     
 }

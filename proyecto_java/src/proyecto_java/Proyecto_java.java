@@ -16,6 +16,7 @@ public class Proyecto_java {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Medios de Transporte \n\n1. Ingreso\n2. Editar\n3. Eliminar\n4. Creditos\n5.Salir");
     }
     
 }
